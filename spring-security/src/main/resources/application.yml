@@ -1,0 +1,21 @@
+server:
+  port: 8001
+
+#spring:
+#  security:
+#    user:
+#      name: a
+#      password: 1
+#      roles: admin,user
+
+
+spring:
+  datasource:
+    username: root
+    password: 123456
+    url: jdbc:mysql://localhost:3306/spring_security?useUnicode=true&characterEncoding=utf-8&useSSL=true&serverTimezone=UTC
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.xy.boot.security.entities
